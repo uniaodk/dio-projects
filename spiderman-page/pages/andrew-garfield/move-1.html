@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Spiderman</title>
+	<link rel="shortcut icon" href="../../assets/img/icons/spider.svg" type="image/x-icon">
+	<link rel="stylesheet" href="../../assets/css/internal.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+</head>
+
+<body>
+	<div class="s-wrapper">
+		<div class="s-nav-wrapper">
+			<nav>
+				<a class="s-nav-img" href="../../index.html">
+					<img src="../../assets/img/icons/spider.svg" alt="Spider Icon">
+				</a>
+				<ul>
+					<li class="active"><a href="./move-1.html">01</a></li>
+					<li><a href="./move-2.html">02</a></li>
+				</ul>
+			</nav>
+		</div>
+		<main class="s-main">
+			<video src="../../assets/videos/amazing-spiderman-2014-trailer.mp4" loop autoplay muted></video>
+			<div class="s-logo">
+				<img src="../../assets/img/spiderman-andrew/movie-01/logo.png" alt="Logo movie 1">
+			</div>
+			<div class="s-description">
+				<ul class="pills">
+					<li>Ano: 2012</li>
+					<li>Diretor: Mark Webb</li>
+				</ul>
+				<p class="s-description-text">
+					<strong>Sinopse:</strong>&nbsp;O jovem Peter Parker quer saber mais sobre sua origem. Ele encontra uma pasta que pertenceu ao seu pai e tenta descobrir por que seus pais desapareceram. A sua busca o leva a Oscorp e ao dr. Curt Connors, que tem como alter ego o letal Lagarto.
+				</p>
+			</div>
+			<ul class="s-links">
+				<li>
+					<a class="s-links___trailer" href="https://www.youtube.com/watch?v=6nzNdpJ3qMo" target="_blank">Assistir Trailer</a>
+				</li>
+			</ul>
+			<ul class="s-gallery">
+				<li class="s-gallery___image">
+					<a data-fancybox="gallery" data-src="../../assets/img/spiderman-andrew/movie-01/gallery/image-01.png">
+						<img src="../../assets/img/spiderman-andrew/movie-01/gallery/image-01.png" alt="Image 1">
+					</a>
+				</li>
+				<li class="s-gallery___image">
+					<a data-fancybox="gallery" data-src="../../assets/img/spiderman-andrew/movie-01/gallery/image-02.png">
+						<img src="../../assets/img/spiderman-andrew/movie-01/gallery/image-02.png" alt="Image 2">
+					</a>
+				</li>
+				<li class="s-gallery___image">
+					<a data-fancybox="gallery" data-src="../../assets/img/spiderman-andrew/movie-01/gallery/image-03.png">
+						<img src="../../assets/img/spiderman-andrew/movie-01/gallery/image-03.png" alt="Image 3">
+					</a>
+				</li>
+			</ul>
+		</main>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+	<script>
+		Fancybox.bind('[data-fancybox="gallery"]', {});
+	</script>
+</body>
+
+</html>

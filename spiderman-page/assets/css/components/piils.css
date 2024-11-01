@@ -1,0 +1,11 @@
+.pills {
+	display: flex;
+	gap: 2rem;
+}
+
+.pills li {
+	padding: .5rem 1rem;
+	background-color: var(--primary-color);
+	color: #fff;
+	border-radius: 1rem;
+}

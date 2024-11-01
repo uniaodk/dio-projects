@@ -1,0 +1,32 @@
+@import url('global.css');
+
+.dc-services h2 {
+	margin-bottom: 1rem;
+}
+
+main table {
+	width: 100%;
+	margin-top: 2rem;
+	border: 1px solid gray;
+	border-radius: .5rem;
+	padding: .5rem;
+	filter: drop-shadow(2px 5px 20px silver);
+}
+
+main table tbody tr:nth-child(even) {
+	background-color: #eee;
+}
+
+main table thead tr th {
+	text-align: left;
+}
+
+main table tbody tr td,
+main table thead tr th {
+	padding: .6rem;
+	text-wrap: nowrap;
+}
+
+main table tfoot tr td {
+	padding-top: 2rem;
+}

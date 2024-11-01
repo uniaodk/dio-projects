@@ -1,0 +1,58 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	overflow-clip-margin: border-box;
+	font-family: sans-serif;
+}
+
+header {
+	margin-top: 2rem;
+}
+
+header h1 {
+	text-align: center;
+	font-family: 'Courier New', Courier, monospace;
+}
+
+ul {
+	margin-left: 2rem;
+}
+
+textarea {
+	width: 100% !important;
+	resize: vertical;
+}
+
+input,
+textarea,
+form button {
+	border-radius: .3rem;
+	padding: .6rem;
+}
+
+form button {
+	border: none;
+	padding-right: 2rem;
+	padding-left: 2rem;
+	box-shadow: 2px 5px 20px silver;
+	background-color: transparent;
+	cursor: pointer;
+	transition: .25s ease-in-out
+}
+
+form button:hover,
+form button:active {
+	box-shadow: 1px 2px 1px black;
+}
+
+form button.danger {
+	background-color: crimson;
+	color: white;
+}
+
+@media screen and (max-width: 700px) {
+	main {
+		padding: .5rem !important;
+	}
+}

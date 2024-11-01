@@ -1,0 +1,54 @@
+@import url('global.css');
+
+html,
+body,
+main {
+	height: 100%;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	gap: 3rem;
+	padding: 2rem;
+}
+
+section {
+	display: flex;
+	gap: 1rem;
+	justify-content: center;
+	font-size: 1.1rem;
+}
+
+section.reversed {
+	flex-direction: row-reverse;
+}
+
+section img {
+	flex: .4;
+	max-width: 33%;
+	border-radius: 1rem;
+}
+
+section .dc-details {
+	flex: .6;
+	gap: 1rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+
+@media screen and (max-width: 760px) {
+
+	section,
+	section.reversed {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	section img,
+	section iframe {
+		max-width: 75%;
+	}
+}

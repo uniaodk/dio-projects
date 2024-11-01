@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="https://www.svgrepo.com/show/499849/calculator.svg" type="image/x-icon">
+	<title>Calculator</title>
+
+	<!-- Normalize CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<main>
+		<div class="header">
+			<button onclick="cleanOperations()" class="clean">
+				<img src="https://www.svgrepo.com/show/533024/trash-xmark.svg" alt="Clean">
+			</button>
+			<div class="display">
+				<div class="previous-operation">
+					<span id="previous-operation"></span>
+				</div>
+				<div class="operation">
+					<span id="operation"></span>
+				</div>
+			</div>
+		</div>
+		<div class="pad-buttons">
+			<ul id="numbers" class="numbers">
+				<!-- Append template numbers -->
+			</ul>
+			<ul id="operators" class="operators">
+				<!-- Append template operators -->
+			</ul>
+		</div>
+	</main>
+	<script src="main.js"></script>
+</body>
+
+</html>

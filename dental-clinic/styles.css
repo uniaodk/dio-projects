@@ -1,0 +1,71 @@
+@import url('./css/global.css');
+
+body {
+	display: flex;
+	height: 100vh;
+}
+
+aside {
+	width: 20%;
+}
+
+aside menu {
+	list-style-type: none;
+	display: flex;
+	flex-direction: column;
+	padding: 2rem;
+	gap: 2rem;
+}
+
+aside menu li button {
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+aside menu li button:hover {
+	text-decoration: underline;
+}
+
+aside menu li button.selected {
+	font-weight: bold;
+	font-size: 1rem;
+	text-align: left;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	flex: 1;
+	width: 100%;
+}
+
+main iframe {
+	padding: 2rem;
+	height: 100%;
+}
+
+footer {
+	padding: 1rem;
+	text-align: center;
+}
+
+
+@media screen and (max-width: 1000px) {
+
+	body {
+		flex-direction: column;
+	}
+
+	aside {
+		width: 100%;
+	}
+
+	aside menu {
+		flex-direction: row;
+		gap: .9rem;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+	}
+}

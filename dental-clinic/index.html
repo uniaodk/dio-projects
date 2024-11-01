@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="./assets/teeth.svg" type="image/x-icon">
+	<link rel="stylesheet" href="./styles.css">
+	<title>Dental Clinic</title>
+</head>
+
+<body>
+	<aside>
+		<menu id="dc-menu">
+			<li><button class="selected" onclick="changeContent(this, 'dashboard')">Página Inicial</button></li>
+			<li><button onclick="changeContent(this,'about')">Sobre a Clínica</button></li>
+			<li><button onclick="changeContent(this,'timesheet')">Horário de Atendimento</button></li>
+			<li><button onclick="changeContent(this,'contact')">Contato</button></li>
+		</menu>
+	</aside>
+	<main>
+		<header id="dc-header">
+			<h1>Dental<img width="100" src="./assets/icons/teeth.svg" align="center" />Clinic</h1>
+		</header>
+		<iframe id="dc-content" src="./pages/dashboard.html" frameborder="0"></iframe>
+		<footer>™ Dental Clinic - (99) 9 9999-9999 - Santa Catarina - Brazil</footer>
+	</main>
+	<script src="./main.js"></script>
+</body>
+
+</html>

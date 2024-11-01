@@ -1,0 +1,172 @@
+* {
+	box-sizing: border-box;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	height: inherit;
+	display: flex;
+	font-family: monospace;
+
+}
+
+main {
+	width: 100%;
+	height: fit-content;
+	min-width: 370px;
+	max-width: 550px;
+	padding: 1rem;
+	margin: 2rem auto;
+	border-radius: 1rem;
+	box-shadow: 3px 3px 5px gray;
+	background-color: silver;
+}
+
+.header {
+	display: flex;
+	;
+	align-items: center;
+	gap: 1rem;
+}
+
+.header .clean {
+	background-color: crimson !important;
+	justify-content: center;
+	align-items: center;
+}
+
+.header .clean img {
+	width: -webkit-fill-available;
+	filter: contrast(0) brightness(4);
+}
+
+.display {
+	display: flex;
+	flex-direction: column;
+	padding: .5rem;
+	box-shadow: 1px 1px 10px gray;
+	border-radius: 1rem;
+	background-color: white;
+	flex: 1;
+	overflow: hidden;
+}
+
+.display .operation,
+.display .previous-operation {
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+	overflow: hidden;
+	text-wrap: nowrap;
+	max-width: 500px;
+	width: 100%;
+}
+
+.display .previous-operation {
+	padding: 1rem;
+	align-items: center;
+	min-height: 2rem;
+	max-height: 6rem;
+	border-bottom: 1px solid silver;
+	overflow: auto;
+}
+
+.display .operation {
+	height: 4rem;
+	font-size: -webkit-xxx-large;
+}
+
+.pad-buttons {
+	display: flex;
+	gap: .5rem;
+	min-width: 300px;
+}
+
+.pad-buttons .numbers,
+.pad-buttons .operators {
+	list-style-type: none;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem 1rem;
+	padding: 0;
+	margin: 2rem 0 0 0;
+	align-self: flex-start;
+	justify-content: center;
+}
+
+.pad-buttons .operators {
+	justify-content: flex-end;
+}
+
+.header .clean,
+.pad-buttons .pad-button {
+	display: flex;
+	width: 80px;
+	height: 80px;
+	transition: .25s;
+}
+
+.header .clean:hover,
+.pad-buttons .pad-button button:hover {
+	box-shadow: 1px 1px 10px black;
+}
+
+.header .clean,
+.pad-buttons .pad-button button {
+	background: white;
+	font-size: -webkit-xxx-large;
+	border-radius: .5rem;
+	border: none;
+	box-shadow: 1px 1px 5px gray;
+	width: 5rem;
+	cursor: pointer;
+}
+
+.pad-buttons .pad-button.equal {
+	flex: 1;
+	flex-grow: inherit;
+	width: 100%;
+}
+
+.pad-buttons .pad-button.equal button {
+	background-color: cornflowerblue;
+	color: white;
+	width: 180px;
+}
+
+@media screen and (max-width: 530px) {
+
+	.pad-buttons .pad-button button {
+		font-size: 1.5rem;
+	}
+
+	.pad-buttons .pad-button {
+		width: 63px;
+		height: 63px;
+	}
+
+	.pad-buttons .pad-button.equal button {
+		width: 146px;
+	}
+}
+
+@media screen and (max-width: 440px) {
+
+	.pad-buttons .pad-button button {
+		font-size: 1.2rem;
+	}
+
+	.pad-buttons .pad-button {
+		width: 50px;
+		height: 50px;
+	}
+
+	.pad-buttons .pad-button.equal button {
+		width: 120px;
+	}
+}

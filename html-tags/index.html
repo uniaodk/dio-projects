@@ -1,0 +1,436 @@
+<html>
+
+<head>
+	<title>HTML - Wiki</title>
+	<link rel="shortcut icon" href="https://www.svgrepo.com/show/226072/html-code.svg" type="image/x-icon">
+	<style>
+		ol.sub-list {
+			counter-reset: item
+		}
+
+		ol.sub-list li {
+			display: block
+		}
+
+		ol.sub-list li:before {
+			content: counters(item, ".") " ";
+			counter-increment: item
+		}
+
+		table {
+			border-collapse: collapse;
+		}
+
+		table tbody tr td,
+		table thead tr th {
+			border: 1px solid black;
+			padding: .5rem 1rem;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>HTML - Wiki</h1>
+	<hr>
+
+	<section id="summary">
+		<h2>Summary</h2>
+		<ol class="sub-list">
+			<li><a href="#what-is-html" rel="bookmark">Whats is HTML?</a></li>
+			<li><a href="#tags" rel="bookmark">Tags</a>
+				<ol class="sub-list">
+					<li><a href="#tag-h1-to-h6" rel="bookmark">&lt;h1&gt; to &lt;h6&gt;</a></li>
+					<li><a href="#tag-p" rel="bookmark">&lt;p&gt;</a></li>
+					<li><a href="#tag-mark" rel="bookmark">&lt;mark&gt;</a></li>
+					<li><a href="#tag-small" rel="bookmark">&lt;small&gt;</a></li>
+					<li><a href="#tag-i" rel="bookmark">&lt;i&gt;</a></li>
+					<li><a href="#tag-u" rel="bookmark">&lt;u&gt;</a></li>
+					<li><a href="#tag-strong" rel="bookmark">&lt;strong&gt;</a></li>
+					<li><a href="#tag-ol" rel="bookmark">&lt;ol&gt;</a></li>
+					<li><a href="#tag-ul" rel="bookmark">&lt;ul&gt;</a></li>
+					<li><a href="#tag-li" rel="bookmark">&lt;li&gt;</a></li>
+					<li><a href="#tag-a" rel="bookmark">&lt;a&gt;</a></li>
+					<li><a href="#tag-hr" rel="bookmark">&lt;hr&gt;</a></li>
+					<li><a href="#tag-sub" rel="bookmark">&lt;sub&gt;</a></li>
+					<li><a href="#tag-sup" rel="bookmark">&lt;sup&gt;</a></li>
+					<li><a href="#tag-blockquote" rel="bookmark">&lt;blockquote&gt;</a></li>
+					<li><a href="#tag-font" rel="bookmark">&lt;font&gt;</a></li>
+					<li><a href="#tag-del" rel="bookmark">&lt;del&gt;</a></li>
+					<li><a href="#tag-abbr" rel="bookmark">&lt;abbr&gt;</a></li>
+				</ol>
+			</li>
+			<li><a href="#more-content" rel="bookmark">More Content</a></li>
+			<li><a href="#references" rel="bookmark">References</a></li>
+		</ol>
+		<hr>
+	</section>
+
+	<section id="what-is-html">
+		<h2>What is HTML?&nbsp;<sup><small><a href="#summary" rel="bookmark">back</a></small></h2>
+		<p>HTML is the standard markup language for creating Web pages. It is <strong>NOT</strong> a programing language, you could compare HTML as a CSV or XML file.</p>
+		<ul>
+			<li>HTML consists of a series of elements</li>
+			<li>HTML elements tell the browser how to display the content</li>
+			<li>HTML elements label pieces of content such as "this is a heading", "this is a paragraph", "this is a link", etc.</li>
+		</ul>
+		<hr>
+	</section>
+
+	<h2 id="tags">Tags</h2>
+
+	<section id="tag-h1-to-h6">
+		<h3>&lt;h1&gt; to &lt;h6&gt;&nbsp;<sup><small><a href="#summary" rel="bookmark">back</a></small></h3>
+		<p>Used to define HTML headings</p>
+		<ul>
+			<li>&lt;h1&gt; defines the <strong>most</strong> important heading. Use only one for the whole page</li>
+			<li>&lt;h6&gt; defines the <strong>least</strong> important heading</li>
+		</ul>
+		<h4>Example:</h4>
+		<code>
+			<h1>This is heading 1</h1>
+			<h2>This is heading 2</h2>
+			<h3>This is heading 3</h3>
+			<h4>This is heading 4</h4>
+			<h5>This is heading 5</h5>
+			<h6>This is heading 6</h6>
+		</code>
+		<hr>
+	</section>
+
+	<section id="tag-p">
+		<h3>&lt;p&gt;&nbsp;<sup><small><a href="#summary" rel="bookmark">back</a></small></h3>
+		<p>Defines a paragraph.</p>
+		<ul>
+			<li>Browsers automatically add a single blank line before and after each &lt;p&gt; element</li>
+		</ul>
+		<h4>Example:</h4>
+		<code>
+			<p>This is paragraph 1</p>
+			<p>This is paragraph 2</p>
+			<p>This is paragraph 3</p>
+		</code>
+		<hr>
+	</section>
+
+	<section id="tag-mark">
+		<h3>&lt;mark&gt;&nbsp;<sup><small><a href="#summary" rel="bookmark">back</a></small></h3>
+		<p>Defines text that should be marked or highlighted.</p>
+		<h4>Example:</h4>
+		<code>
+			<p>This is paragraph with <mark>text highlighted</mark> by tag mark</p>
+		</code>
+		<hr>
+	</section>
+
+	<section id="tag-small">
+		<h3>&lt;small&gt;&nbsp;<sup><small><a href="#summary" rel="bookmark">back</a></small></h3>
+		<p>Defines smaller text </p>
+		<ul>
+			<li>Small tag shrink the font proportional</li>
+		</ul>
+		<h4>Example:</h4>
+		<code>
+			<p>This is paragraph with <small><small><small>small text</small></small></small> by triple tag small</p>
+		</code>
+		<hr>
+	</section>
+
+	<section id="tag-i">
+		<h3>&lt;i&gt;&nbsp;<sup><small><a href="#summary" rel="bookmark">back</a></small></h3>
+		<p>Defines a part of text in an alternate voice or mood.</p>
+		<ul>
+			<li>Typically displayed in italic</li>
+			<li>Used to indicate a technical term, a phrase from another language, a thought, a ship name, etc.</li>
+		</ul>
+		<h4>Example:</h4>
+		<code>
+			<p>This is paragraph with my apresentation on portuguese, <i>Meu nome é André</i> by tag i</p>
+		</code>
+		<hr>
+	</section>
+
+	<section id="tag-u">
+		<h3>&lt;u&gt;&nbsp;<sup><small><a href="#summary" rel="bookmark">back</a></small></h3>
+		<p>Defines some text that is unarticulated and styled differently from normal text.</p>
+		<ul>
+			<li>Typically displayed with an underline</li>
+			<li>Used to misspelled words or proper names in Chinese text</li>
+		</ul>
+		<h4>Example:</h4>
+		<code>
+			<p>This is some <u>mispeled</u> text.</p>
+		</code>
+		<hr>
+	</section>
+
+	<section id="tag-strong">
+		<h3>&lt;strong&gt;&nbsp;<sup><small><a href="#summary" rel="bookmark">back</a></small></h3>
+		<p>Defines important text</p>
+		<ul>
+			<li>Typically displayed in bold</li>
+		</ul>
+		<h4>Example:</h4>
+		<code>
+			<p>Where is more important? <strong>This text is important!</strong></p>
+		</code>
+		<hr>
+	</section>
+
+	<section id="tag-ol">
+		<h3>&lt;ol&gt;&nbsp;<sup><small><a href="#summary" rel="bookmark">back</a></small></h3>
+		<p>Defines an ordered list</p>
+		<ul>
+			<li>An ordered list can be numerical or alphabetical</li>
+		</ul>
+		<h4>Attributes</h4>
+		<table>
+			<thead>
+				<th>Atribute</th>
+				<th>Value</th>
+				<th>Description</th>
+			</thead>
+			<tbody>
+				<tr>
+					<td>reversed</td>
+					<td><i>reversed</i></td>
+					<td>Reverse order (9, 8, 7...)</td>
+				</tr>
+				<tr>
+					<td>start</td>
+					<td><i>number</i></td>
+					<td>Start value to order</td>
+				</tr>
+				<tr>
+					<td>type</td>
+					<td><i>1, A, a, I, i</i></td>
+					<td>Kind of marker to order</td>
+				</tr>
+			</tbody>
+		</table>
+		<h4>Example:</h4>
+		<code>
+			<ol type="I">
+				<li>Coffee</li>
+				<li>Tea</li>
+				<li>Milk</li>
+			</ol>
+			
+			<ol type="a" start="50">
+				<li>Coffee</li>
+				<li>Tea</li>
+				<li>Milk</li>
+			</ol>
+		</code>
+		<hr>
+	</section>
+
+	<section id="tag-ul">
+		<h3>&lt;ul&gt;&nbsp;<sup><small><a href="#summary" rel="bookmark">back</a></small></h3>
+		<p>Defines an ordered list</p>
+		<ul>
+			<li>Defines an unordered (bulleted) list</li>
+		</ul>
+		<h4>Example:</h4>
+		<code>
+			<ul>
+				<li>Coffee</li>
+				<li>Tea</li>
+				<li>Milk</li>
+			</ul>
+		</code>
+		<hr>
+	</section>
+
+	<section id="tag-li">
+		<h3>&lt;li&gt;&nbsp;<sup><small><a href="#summary" rel="bookmark">back</a></small></h3>
+		<p>Defines a list item</p>
+		<h4>Attributes</h4>
+		<table>
+			<thead>
+				<th>Atribute</th>
+				<th>Value</th>
+				<th>Description</th>
+			</thead>
+			<tbody>
+				<tr>
+					<td>value</td>
+					<td><i>number</i></td>
+					<td>Only to &lt;ol&gt; list. Specifies the start value of a list item.</td>
+				</tr>
+			</tbody>
+		</table>
+		<h4>Example:</h4>
+		<code>
+			<ol>
+				<li value="4">Coffee</li>
+				<li>Tea</li>
+				<li>Milk</li>
+			</ol>
+			
+			<ul>
+				<li>Coffee</li>
+				<li>Tea</li>
+				<li>Milk</li>
+			</ul>
+		</code>
+		<hr>
+	</section>
+
+	<section id="tag-a">
+		<h3>&lt;a&gt;&nbsp;<sup><small><a href="#summary" rel="bookmark">back</a></small></h3>
+		<p>Defines a hyperlink, which is used to link from one page to another</p>
+		<h4>Attributes</h4>
+		<table>
+			<thead>
+				<th>Atribute</th>
+				<th>Value</th>
+				<th>Description</th>
+			</thead>
+			<tbody>
+				<tr>
+					<td>donwload</td>
+					<td><i>filename</i></td>
+					<td>Specifies that the target will be downloaded when a user clicks on the hyperlink</td>
+				</tr>
+				<tr>
+					<td>href</td>
+					<td><i>URL or id tag</i></td>
+					<td>Specifies the URL of the page the link goes to</td>
+				</tr>
+				<tr>
+					<td>rel</td>
+					<td><i>alternate, author, bookmark, external, help, license, next, nofollow, noreferrer, noopener, prev, search, tag</i></td>
+					<td>Specifies the relationship between the current document and the linked documento</td>
+				</tr>
+				<tr>
+					<td>target</td>
+					<td><i>_blank, _parent, _self, _top</i></td>
+					<td>Specifies where to open the linked document</td>
+				</tr>
+			</tbody>
+		</table>
+		<h4>Example:</h4>
+		<code>
+			<a href="https://github.com">Visit Github.com</a>
+		</code>
+		<hr>
+	</section>
+
+	<section id="tag-hr">
+		<h3>&lt;hr&gt;&nbsp;<sup><small><a href="#summary" rel="bookmark">back</a></small></h3>
+		<p>Defines a thematic change in the content</p>
+		<ul>
+			<li>Often displayed as a horizontal rule that is used to separate content (or define a change) in an HTML page</li>
+		</ul>
+		<h4>Example:</h4>
+		<code>
+			<h1>The Main Languages of the Web</h1>
+			<p>HTML is the standard markup language for creating Web pages. HTML describes the structure of a Web page, and consists of a series of elements. HTML elements tell the browser how to display the content.</p>
+			<hr>
+			<p>CSS is a language that describes how HTML elements are to be displayed on screen, paper, or in other media. CSS saves a lot of work, because it can control the layout of multiple web pages all at once.</p>
+			<hr>
+		</code>
+		<hr>
+	</section>
+
+	<section id="tag-sub">
+		<h3>&lt;sub&gt;&nbsp;<sup><small><a href="#summary" rel="bookmark">back</a></small></h3>
+		<p>Defines subscripted text</p>
+		<ul>
+			<li>Subscript text appears half a character below the normal line, and is sometimes rendered in a smaller font.</li>
+			<li>Subscript text can be used for chemical formulas, like H<sub>2</sub>O.</li>
+		</ul>
+		<h4>Example:</h4>
+		<code>
+			<p>This text contains <sub>subscript</sub> text.</p>
+		</code>
+		<hr>
+	</section>
+
+	<section id="tag-sup">
+		<h3>&lt;sup&gt;&nbsp;<sup><small><a href="#summary" rel="bookmark">back</a></small></h3>
+		<p>Defines superscripted text</p>
+		<ul>
+			<li>Superscript text appears half a character above the normal line, and is sometimes rendered in a smaller font.</li>
+			<li>Superscript text can be used for footnotes, like WWW<sup>[1]</sup></li>
+		</ul>
+		<h4>Example:</h4>
+		<code>
+			<p>This text contains <sup>superscript</sup> text.</p>
+		</code>
+		<hr>
+	</section>
+
+	<section id="tag-blockquote">
+		<h3>&lt;blockquote&gt;&nbsp;<sup><small><a href="#summary" rel="bookmark">back</a></small></h3>
+		<p>Defines a section that is quoted from another source</p>
+		<ul>
+			<li> Use &lt;q&gt; for inline (short) quotations..</li>
+		</ul>
+		<h4>Example:</h4>
+		<code>
+			<blockquote cite="https://developer.mozilla.org/pt-BR/docs/Web/HTML">
+				HTML (Linguagem de Marcação de HiperTexto) é o bloco de construção mais básico da web. Define o significado e a estrutura do conteúdo da web. Outras tecnologias além do HTML geralmente são usadas para descrever a aparência/apresentação (CSS) ou a funcionalidade/comportamento (JavaScript) de uma página da web.
+			</blockquote>
+		</code>
+		<hr>
+	</section>
+
+	<section id="tag-font">
+		<h3>&lt;font&gt;&nbsp;<sup><small><a href="#summary" rel="bookmark">back</a></small></h3>
+		<h4><strong>
+				<font color="red">Not Supported in HTML5.</font>
+			</strong>
+		</h4>
+		<p>Was used in HTML 4 to specify the font face, font size, and color of text</p>
+		<h4>Example:</h4>
+		<code>
+			<p><font color="blue">Example</font> of <font size="5">font</font></p>
+		</code>
+		<hr>
+	</section>
+
+	<section id="tag-del">
+		<h3>&lt;del&gt;&nbsp;<sup><small><a href="#summary" rel="bookmark">back</a></small></h3>
+		<p>Defines text that has been deleted from a document</p>
+		<h4>Example:</h4>
+		<code>
+			<p>My favorite color is <del>blue</del> <ins>red</ins>!</p>
+		</code>
+		<hr>
+	</section>
+
+	<section id="tag-abbr">
+		<h3>&lt;abbr&gt;&nbsp;<sup><small><a href="#summary" rel="bookmark">back</a></small></h3>
+		<p>Defines an abbreviation or an acronym</p>
+		<ul>
+			<li>Like "HTML", "CSS", "Mr.", "Dr.", "ASAP", "ATM"</li>
+		</ul>
+		<h4>Example:</h4>
+		<code>
+			The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.
+		</code>
+		<hr>
+	</section>
+
+	<section id="more-content">
+		<h2></sup>More Content&nbsp;<sup><small><a href="#summary" rel="bookmark">back</a></small></h2>
+		<ul>
+			<li><a href="https://www.w3schools.com/tags/default.asp" target="_blank" rel="external">HTML Tags</a></li>
+			<li><a href="https://www.w3schools.com/tags/ref_standardattributes.asp" target="_blank" rel="external">HTML Global Attributes</a></li>
+			<li><a href="https://www.w3schools.com/tags/ref_attributes.asp" target="_blank" rel="external">HTML Attributes</a></li>
+		</ul>
+		<hr>
+	</section>
+
+	<section id="references">
+		<h2></sup>References&nbsp;<sup><small><a href="#summary" rel="bookmark">back</a></small></h2>
+		<ul>
+			<li><a href="https://www.w3schools.com" target="_blank" rel="external">W3Schools</a></li>
+			<li><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank" rel="external">MDN Web Docs - Community</a></li>
+		</ul>
+		<hr>
+	</section>
+</body>
+
+</html>
