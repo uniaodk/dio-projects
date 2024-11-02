@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Classificador Nível Herói</title>
+</head>
+
+<body>
+
+</body>
+<script>
+  let heroName = prompt("Nome do herói?");
+  let exp = prompt("Quantidade experiência?");
+  const levels = [
+    { name: "Ferro", expMax: 1000 },
+    { name: "Bronze", expMax: 2000 },
+    { name: "Prata", expMax: 5000 },
+    { name: "Ouro", expMax: 7000 },
+    { name: "Platina", expMax: 8000 },
+    { name: "Ascendente", expMax: 9000 },
+    { name: "Imortal", expMax: 10000 },
+    { name: "Radiante", expMax: undefined },
+  ]
+
+  for (const level of levels) {
+    const isLastLevel = level.expMax === undefined;
+    if (!isLastLevel && Number(exp) > level.expMax) continue;
+    alert(`O Herói de nome ${heroName} está no nível de ${level.name}`);
+    break;
+  }
+</script>
+
+</html>
