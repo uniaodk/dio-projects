@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../hbo_favicon.png" type="image/x-icon">
+    <title>Entrar | HBO Max</title>
+    <link rel="stylesheet" href="../assets/css/sign-in.css" />
+  </head>
+  <body class="signin-body">
+    <nav class="menu">
+      <a href="../index.html" class="menu__logo">
+        <img
+          src="../assets/images/hbo-logo.svg"
+          alt="Logotipo HBOMax"
+          class="menu__logo-image"
+        />
+      </a>
+      <div>
+        <a href="#" class="menu__item">Entrar</a>
+        <a
+          href="../index.html#subscription"
+          class="menu__item menu__item--button button"
+        >
+          Assine Agora
+        </a>
+      </div>
+    </nav>
+    <main class="signin-main">
+      <form class="login container">
+        <h1 class="login__title">Entrar</h1>
+        <label for="email" class="login__label">
+          Você tem uma conta da HBO Max?
+        </label>
+        <input
+          class="login__field"
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Endereço de e-mail"
+          required
+        />
+        <input
+          class="login__field"
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Senha"
+          minlength="8"
+          required
+        />
+
+        <div class="login__actions">
+          <button type="submit" class="button button--gradient">Entrar</button>
+          <a href="#" class="login__link"> Esqueceu a senha? </a>
+        </div>
+      </form>
+    </main>
+
+    <footer class="footer container">
+      <div class="footer__links">
+        <a class="footer__link" href="#">Agora na HBO Max</a>
+        <a class="footer__link" href="#">Em breve</a>
+        <a class="footer__link" href="#">Filme em destaque</a>
+        <a class="footer__link" href="#">Séries</a>
+        <a class="footer__link" href="#">Ajuda</a>
+      </div>
+      <p class="text--small footer__legal">
+        © 2024 WarnerMedia Direct Latin America, LLC. Todos os direitos
+        reservados. HBO Max é usado sob licença.
+      </p>
+      <div class="footer__social">
+        <a href="#" class="footer__social-link">
+          <img src="../assets/images/fb-0.png" alt="Facebook" />
+        </a>
+        <a href="#" class="footer__social-link">
+          <img src="../assets/images/twitter-0.png" alt="Twitter" />
+        </a>
+        <a href="#" class="footer__social-link">
+          <img src="../assets/images/instagram-0.png" alt="Instagram" />
+        </a>
+        <a href="#" class="footer__social-link">
+          <img src="../assets/images/youtube-0.png" alt="Youtube" />
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>
